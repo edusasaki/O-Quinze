@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O Quinze — Hub literário · Grupo G4</title>
+<meta name="description" content="Hub interativo sobre O Quinze, de Rachel de Queiroz.">
+<!-- CDN: Google Fonts (Cormorant Garamond = títulos, DM Sans = interface). Sem fallback de rede, o navegador usa serif/sans-serif. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- ABERTURA -->
+<div id="intro" role="dialog" aria-label="Abertura">
+  <p class="intro-line">Em 1915, o céu do Ceará não voltou a chover.</p>
+  <h1>O Quinze</h1>
+  <p class="intro-author">Rachel de Queiroz</p>
+  <button id="enter" class="btn">Entrar no hub ↓</button>
+</div>
+
+<!-- ÍNDICE LATERAL (vira barra inferior no mobile) -->
+<nav id="rail" aria-label="Capítulos">
+  <div id="progress" aria-hidden="true"></div>
+  <ol>
+    <li><a href="#obra">01 <span>A obra</span></a></li>
+    <li><a href="#enredo">02 <span>Enredo</span></a></li>
+    <li><a href="#narrativa">03 <span>Quem narra</span></a></li>
+    <li><a href="#personagens">04 <span>Personagens</span></a></li>
+    <li><a href="#escola">05 <span>Modernismo</span></a></li>
+    <li><a href="#contexto">06 <span>1915</span></a></li>
+    <li><a href="#temas">07 <span>Temas</span></a></li>
+    <li><a href="#hoje">08 <span>Hoje</span></a></li>
+    <li><a href="#autora">09 <span>A autora</span></a></li>
+    <li><a href="#quiz">10 <span>Quiz</span></a></li>
+    <li><a href="#fontes">11 <span>Fontes</span></a></li>
+  </ol>
+</nav>
+
+<main>
+  <section id="obra" class="dark">
+    <div class="big15" aria-hidden="true"><span id="count">0</span></div>
+    <div class="wrap">
+      <h2>A obra</h2>
+      <p class="lead"><i>O Quinze</i>, romance de estreia de Rachel de Queiroz, foi publicado em 1930. O título remete à grande seca de 1915 no Ceará, que serve de pano de fundo para a história.</p>
+      <dl class="facts">
+        <div><dt>Autora</dt><dd>Rachel de Queiroz (1910–2003)</dd></div>
+        <div><dt>Publicação</dt><dd>1930</dd></div>
+        <div><dt>Gênero</dt><dd>Romance regionalista</dd></div>
+        <div><dt>Espaço</dt><dd>Sertão cearense e Fortaleza</dd></div>
+      </dl>
+      <p>Por que importa: é um marco do romance social nordestino e da chamada Geração de 1930, que passou a tratar a seca, a pobreza e a desigualdade como problemas humanos e sociais, não como paisagem exótica.</p>
+    </div>
+  </section>
+
+  <section id="enredo"><div class="wrap"><h2>Enredo: 1915, passo a passo</h2>
+    <p class="lead">Abra cada etapa. A história segue duas linhas que se cruzam.</p>
+    <div data-render="enredo"></div></div></section>
+
+  <section id="narrativa" class="dark"><div class="wrap"><h2>Como essa história é contada?</h2>
+    <p class="note">Análise literária: classificações comuns em estudos da obra.</p>
+    <div data-render="narrativa"></div></div></section>
+
+  <section id="personagens"><div class="wrap"><h2>Personagens</h2>
+    <p class="lead">Escolha um nome para ver papel, relações e conflito.</p>
+    <div data-render="personagens" class="split"></div>
+    <p class="map" aria-label="Mapa de relações">Conceição ⇄ Vicente (primos) · Conceição ⇄ Dona Inácia (avó e neta) · Chico Bento ⇄ Cordulina (casal) · Cordulina ⇄ Duquinha (mãe e filho) · Conceição ⇄ família de Chico Bento (ajuda em Fortaleza)</p></div></section>
+
+  <section id="escola" class="dark"><div class="wrap"><h2>Modernismo → Regionalismo → O Quinze</h2>
+    <div data-render="escola" class="split"></div></div></section>
+
+  <section id="contexto"><div class="wrap"><h2>1915</h2>
+    <div data-render="contexto"></div></div></section>
+
+  <section id="temas" class="dark"><div class="wrap"><h2>Temas e criticidade</h2>
+    <div data-render="temas" class="split"></div>
+    <h3>Uma frase, uma ideia</h3>
+    <p class="note">Sem citação literal: são paráfrases de cenas, seguidas de interpretação.</p>
+    <div data-render="frases"></div></div></section>
+
+  <section id="hoje"><div class="wrap"><h2>1915 ≠ 2026</h2>
+    <p class="lead">Semelhanças e diferenças. Comparar não é dizer que nada mudou.</p>
+    <div data-render="hoje"></div></div></section>
+
+  <section id="autora" class="dark"><div class="wrap"><h2>Rachel de Queiroz</h2>
+    <div data-render="autora"></div></div></section>
+
+  <section id="quiz"><div class="wrap"><h2>Quiz</h2>
+    <div id="quizbox" aria-live="polite"></div></div></section>
+
+  <section id="fontes" class="dark"><div class="wrap">
+    <h2>Quem construiu este hub</h2>
+    <p class="team">Eduardo S. · Eduardo M. · Elyel · Davi · Gabriel Flores</p>
+    <p>Grupo G4 · Literatura · entrega em 02/10/2026</p>
+    <h3>Fontes e referências</h3>
+    <ul class="src">
+      <li>Academia Brasileira de Letras — perfil biográfico de Rachel de Queiroz (academia.org.br).</li>
+      <li>Enciclopédia Itaú Cultural — verbetes sobre Rachel de Queiroz e <i>O Quinze</i> (enciclopedia.itaucultural.org.br).</li>
+      <li>Brasil Escola — Modernismo (segunda fase) e Geração de 1930 (brasilescola.uol.com.br).</li>
+      <li>Leitura do romance <i>O Quinze</i>, de Rachel de Queiroz (José Olympio / Arqueiro, várias edições).</li>
+    </ul>
+    <p class="note">Confira as datas e detalhes nessas fontes antes da entrega. Nenhuma imagem externa foi usada.</p>
+  </div></section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
